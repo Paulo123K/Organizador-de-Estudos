@@ -1,0 +1,140 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #111;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul li a {
+    color: #ffb74d; /* Laranja mais suave */
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar nav ul li a:hover {
+    color: #fff;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  header {
+    background-color: #ffb74d; /* Laranja mais suave */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .card {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card h2 {
+    color: #ffb74d;
+    margin-bottom: 15px;
+  }
+  
+  /* Ajuste para o gráfico */
+  #grafico {
+    display: flex;
+    justify-content: flex-start;  /* Alinha o gráfico à esquerda */
+    width: 100%;
+    max-width: 400px;  /* Limita o tamanho do gráfico */
+    margin-bottom: 20px;
+  }
+  
+  canvas {
+    width: 100% !important; /* Faz o gráfico ocupar toda a largura do container */
+    height: 250px !important;  /* Tamanho reduzido para o gráfico */
+  }
+  
+  /* Formulário e botão */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffb74d;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ffb74d;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff9800;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #111;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #777;
+  }
+  
